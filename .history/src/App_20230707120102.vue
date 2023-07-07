@@ -5,11 +5,12 @@ import { getListAPI } from '@/api'
 import { onMounted } from 'vue'
 export default {
   setup () {
-    onMounted(async () => {
+    onMounted(() => {
       const { data: res } = await getListAPI()
-      console.log('res', res)
+      console.log('res')
     })
   }
+
 }
 </script>
 <style lang="less">

@@ -7,9 +7,10 @@ export default {
   setup () {
     onMounted(async () => {
       const { data: res } = await getListAPI()
-      console.log('res', res)
+      console.log('res')
     })
   }
+
 }
 </script>
 <style lang="less">
